@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(162, 229, 162);
+    background-color: rgb(15, 173, 15);
 }
 /* Fonts  */
 
@@ -13,20 +13,18 @@ html {
 body{
     font-family: 'PTSans',Arial, sans-serif;
     font-size: 87%;
+    margin: 0;
+    padding: 0;
 }
 .container{
-    box-sizing: border-box;
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    background: url('./images/bg1.jpeg') left bottom repeat-x ,#FFF url('./images/bg1.jpeg') repeat-x;
-    padding-top: 15px;
-    padding-left: 40px;
+   max-width: 940px;
+   margin: 0 auto;
 }
 
 .content-area{
     border-top: 3px solid rgb(120, 229, 120);
     border-bottom: 3px solid rgb(120, 229, 120);
+    background-color: white;
 }
 .content-area h1{
     text-align: center;
@@ -35,6 +33,7 @@ body{
     width: 66%;
     float: left;
     padding-right: 40px;
+    /* color:aqua */
     box-sizing: border-box;
 }
 
@@ -46,7 +45,7 @@ body{
     font-size: 85%;
     background-color: rgb(194, 246, 194);
     margin-top: 20px;
-    background-image: linear-gradient(to right, rgb(80, 236, 80), #fff);
+    background-image: linear-gradient(to right, rgb(80, 236, 80), aqua);
     background-image: -webkit-linear-gradient(to right, rgb(80, 236, 80), #fff);
     background-image: -moz-linear-gradient(to right, rgb(80, 236, 80), #fff);
     background-image: -ms-linear-gradient(to right, rgb(80, 236, 80), #fff);
@@ -68,9 +67,9 @@ header {
     padding-top: 20px;
     padding-left: 10px;
     margin-top: 15px;
-    background-image: url('/images/bg2.jpeg');
     background-position: bottom center;
     background-repeat: no-repeat;
+    color: white;
 }
 header h1{
     margin: 0;
@@ -86,7 +85,7 @@ header p{
 footer{
     text-align: center;
     font-size: 85%;
-    color: #999;
+    color: #272424;
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -112,7 +111,7 @@ footer{
 .site-nav a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 10px 20px ;
     border: 3px solid rgb(120, 229, 120);
     border-bottom: none;
@@ -121,6 +120,29 @@ footer{
 .site-nav a:hover{
     background-color: rgb(120, 229, 120);
     color: white;
+}
+
+
+@media screen and (max-width:700px){
+
+    .site-nav li{
+        width: 33.332%;
+        margin-right: 0;
+    }
+    .site-nav a{
+        padding: 15px 0;
+        margin-right: 5px ;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .site-nav li{
+        width: 50%;
+    }
+   
 }
 
 /* End Site Nav  */
@@ -309,3 +331,49 @@ input[type="submit"]:focus{
     background-repeat: no-repeat;
     text-indent: -9999px; 
 }
+
+
+
+/* Media Queries  */
+@media screen and (min-width: 1300px){
+    .container{
+        max-width: 1200px;
+    }
+    body{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:950px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .main-area,
+    .sidebar{
+        width: auto;
+        float: none;
+    }
+    .main-area{
+        padding: 0 10px;
+    }
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+}
+
