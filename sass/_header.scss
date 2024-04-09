@@ -1,0 +1,28 @@
+$primaryColor: orange;
+
+a {
+    color: $primaryColor;
+}
+
+.site-header nav{
+    ul {
+        padding: 0;
+        margin: 0;
+        @extend .group;
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        margin-left: 10px;
+    }
+
+    a {
+        display: block;
+        padding: 10px;
+        background-color: $primaryColor;
+        color: white;
+        text-decoration: none;
+    }
+
+}

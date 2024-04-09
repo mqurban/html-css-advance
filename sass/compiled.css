@@ -1,0 +1,62 @@
+a {
+  color: orange;
+}
+
+.site-header nav ul {
+  padding: 0;
+  margin: 0;
+}
+.site-header nav li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+}
+.site-header nav a {
+  display: block;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-a, .btn-b {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid orange;
+  border-radius: 7px;
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-b {
+  background-color: red;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue));
+  background-image: -webkit-linear-gradient(top, blue, red); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, blue, red); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, blue, red); /* IE10 */
+  background-image: -o-linear-gradient(top, blue, red); /* Opera 11.10+ */
+  background-image: linear-gradient(to bottom, blue, red);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr="blue", EndColorStr="red");
+  background-image: linear-gradient(to bottom, blue, red);
+  color: white;
+}
+
+.group:before, .site-header nav ul:before,
+.group:after,
+.site-header nav ul:after {
+  content: "";
+  display: table;
+}
+
+.group:after, .site-header nav ul:after {
+  clear: both;
+}
+
+.group, .site-header nav ul {
+  zoom: 1;
+}
+
+/*# sourceMappingURL=compiled.css.map */

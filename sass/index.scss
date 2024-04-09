@@ -1,0 +1,51 @@
+@import 'header';
+
+@mixin verticalGradient($fromColor, $toColor){
+
+    background-color: $toColor /* Fallback Color */;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor)) ;
+    background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+    background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+    background-image:         linear-gradient(to bottom, $fromColor, $toColor);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+    background-image: linear-gradient(to bottom, $fromColor, $toColor);
+    
+};
+
+
+.btn-a{
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid $primaryColor;
+    border-radius: 7px;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-b{
+    @extend .btn-a;
+    // background-color: lighten($primaryColor, 45%);
+
+    @include verticalGradient(blue, red );
+    color: white;
+}
+
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;
+}
+
