@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .column-layout{
+      max-width: 1400px;
+      margin: 40px auto 0 auto;
+    }
+    .col1{
+      padding: 20px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      background-color: aqua;
+      flex-basis: 31%;
+      color: black;
+
+    }
+  
+    @media screen and (min-width: 900px){
+    .column-layout{
+      display: flex;
+      justify-content: space-between;
+    }
+    }
+
+    .boxes{
+
+      max-width: 1400px;
+      margin: 40px auto 0 auto;
+      padding: 30px 0 ;
+      display: flex;
+      text-align:center ;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+    }
+    .box1{
+      width: 150px;
+      height: 100px;
+      background-color: red;
+      line-height: 100px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 60px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .banner{
+      height: 400px;
+      max-width: 700px;
+      margin: 40px auto 40px auto;
+      background-color: #2a2a2a;
+      display: flex;
+
+    }
+    .center-me{
+      color: #fff;
+      font-size: 50px;
+      margin: auto;
+    }
+
+    .equal-container{
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+    }
+    .first
+    {
+      background-color: white;
+      padding: 20px;
+      flex: 1;
+    }
+    .second{
+      background-color: yellow;
+      flex: 1;
+      display: flex;
+      color: black;
+      flex-direction: column;
+      justify-content: space-between;
+      
+    }
+    .second-a{
+      background-color: aqua;
+      border: 2px solid red;
+    }
+    .second-b{
+      background-color: green;
+      border: 2px solid red;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="column-layout">
+    <div class="col1">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea est deserunt totam consequatur temporibus beatae iure placeat ipsa sequi! Blanditiis ea ipsum tenetur. Repellendus rerum quae aliquam molestias maiores dolores.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam doloremque id molestiae nam harum. Earum eligendi tenetur ab vitae rem quis repellat iure! Possimus maiores ullam fugiat reiciendis modi excepturi!
+      </p>
+    </div>
+    <div class="col1">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ipsum quod repellendus quibusdam laudantium natus. Tempora laudantium enim, veritatis similique omnis, mollitia earum debitis aspernatur, inventore aliquid fugit perspiciatis obcaecati.</p>
+    </div>
+    <div class="col1">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minus quisquam quae fugit, eos modi facilis, eveniet omnis facere pariatur, error hic quis aut deleniti ad iste sed perspiciatis illo!</p>
+    </div>
+  </div>
+
+  <div class="boxes">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+    <div class="box1">5</div>
+
+  </div>
+
+  <div class="banner">
+    <div class="center-me">
+      Center me Plz
+    </div>
+  </div>
+<div class="equal-container">
+  <div class="first">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi itaque voluptates architecto, omnis nihil nostrum autem, ut voluptate deserunt exercitationem praesentium rerum fugit blanditiis unde sint iste cumque inventore hic!</p>
+  </div>
+  <div class="second">
+    <div class="second-a">A</div>
+    <div class="second-b">B</div>
+  </div>
+  
+</div>
+</body>
+</html>
+
